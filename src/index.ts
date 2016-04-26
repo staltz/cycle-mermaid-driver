@@ -10,9 +10,10 @@ export function makeMermaidDriver(container: Element | string, mermaidOptions: O
     /* tslint:disable:no-empty */
     dsl$.addListener({
       next: (dsl) => {
+        rootElement.innerHTML = '';
         mermaidAPI.render('id1', dsl, (svgCode: string) => {
           rootElement.innerHTML = svgCode;
-        });
+        }, rootElement);
       },
       error: () => {},
       complete: () => {},
