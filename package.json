@@ -1,6 +1,6 @@
 {
   "name": "cycle-mermaid-driver",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cycle.js driver to render an dynamic mermaid graph given a stream of DSL strings",
   "license": "MIT",
   "homepage": "https://github.com/staltz/cycle-mermaid-driver",
